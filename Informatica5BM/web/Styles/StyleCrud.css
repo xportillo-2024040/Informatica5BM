@@ -1,0 +1,471 @@
+/* Reset y fuente base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #FFFCF0;
+    color: #000;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* ================================
+   HEADER
+================================ */
+.headerOpciones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #FFFCF0;
+    color: #000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerHorario {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: #BEDE8C;
+    color: #000;
+}
+
+.bannerInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.logo h1 {
+    color: #BEDE8C;
+    font-size: 1.5rem;
+}
+
+.infoGroup {
+    display: flex;
+    gap: 2rem;
+}
+
+.infoItem h4 {
+    color: #BEDE8C;
+    font-size: 0.9rem;
+}
+
+.infoItem span {
+    color: #333;
+    font-size: 1rem;
+}
+
+.bannerOpciones .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #fff;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: #FFFCF0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #E3B78A;
+    color: #000;
+}
+
+/* ================================
+   CRUD MAIN
+================================ */
+.crud-main {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 150px;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Contenedor superior: form + tabla */
+.top-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Formulario */
+.formulario {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #BEDE8C;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.formulario input,
+.acciones input {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid #BEDE8C;
+    background-color: #FFFCF0;
+    color: #000;
+    font-size: 1rem;
+}
+
+.formulario input:focus,
+.acciones input:focus {
+    outline: none;
+    border-color: #9cc66b;
+    background-color: #fff;
+}
+
+/* Botones */
+button {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    background-color: #BEDE8C;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a3c871;
+    transform: translateY(-2px);
+}
+
+.btn-agregar {
+    background-color: #BEDE8C;
+    color: #000;
+}
+
+.btn-Actualizar {
+    background-color: #E3B78A;
+    color: #000;
+}
+
+.btn-drop {
+    background-color: #DB3125;
+    color: white;
+}
+
+.btn-agregar:hover { background-color: #a3c871; }
+.btn-Actualizar:hover { background-color: #c99f74; }
+.btn-drop:hover { background-color: #b92a1f; }
+
+select {
+    width: 100%;
+    padding: 0.9rem;
+    background: #FFFCF0;
+    color: #000;
+    border: 2px solid #BEDE8C;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+select:hover {
+    border-color: #9cc66b;
+    background: #fff;
+}
+
+/* Tabla de registros */
+.tabla-registros {
+    flex: 2;
+    min-width: 480px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #BEDE8C;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+.tabla-registros h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;        
+}
+
+table th {
+    background: #BEDE8C;
+    color: #000;
+}
+
+table td {
+    background: #fff;    
+}
+
+table tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f2f2f2;
+    transition: 0.3s ease;
+}
+
+/* Sección inferior: buscar y eliminar */
+.acciones {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 2px solid #E3B78A;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.acciones h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.acciones-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.acciones-inputs div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 250px;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FFFCF0;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BEDE8C;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9cc66b;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 992px) {
+    .bannerInfo {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .infoGroup {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .bannerOpciones .menu {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario,
+    .tabla-registros {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .bannerOpciones .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tabla-registros {
+        overflow-x: auto;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 40px;
+    }
+
+    .infoItem h4 {
+        font-size: 0.8rem;
+    }
+
+    .infoItem span {
+        font-size: 0.9rem;
+    }
+
+    button, .btn-agregar, .btn-Actualizar, .btn-drop {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    select {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .headerOpciones {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerOpciones {
+        position: static;
+    }
+}
+
+
+/* ================================
+   Botones de Acción (Formulario y Tabla)
+================================ */
+
+/* Estilos compartidos por los botones del formulario y los enlaces de la tabla */
+button,
+a.btn-Actualizar,
+a.btn-drop {
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none; /* Para quitar el subrayado de los enlaces */
+    display: inline-block; /* Para que los enlaces puedan tener padding y margen */
+    min-width: 80px; /* Tamaño consistente */
+    text-align: center; /* Centra el texto */
+}
+
+/* Colores para el botón de "Agregar" */
+.btn-agregar {
+    background-color: #BEDE8C;
+    color: #000;
+}
+
+/* Colores para el botón/enlace de "Actualizar" y "Editar" */
+.btn-Actualizar {
+    background-color: #E3B78A;
+    color: #000;
+}
+
+/* Colores para el enlace de "Eliminar" */
+.btn-drop {
+    background-color: #DB3125;
+    color: white;
+}
+
+/* Efectos al pasar el cursor */
+.btn-agregar:hover {
+    background-color: #a3c871;
+    transform: translateY(-2px);
+}
+
+.btn-Actualizar:hover {
+    background-color: #c99f74;
+    transform: translateY(-2px);
+}
+
+.btn-drop:hover {
+    background-color: #b92a1f;
+    transform: translateY(-2px);
+}
